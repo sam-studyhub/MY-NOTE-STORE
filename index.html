@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sam's Study Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 10px;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+    }
+
+    header p {
+      color: #cbd5f5;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      width: 280px;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #22d3ee;
+    }
+
+    .card button {
+      background: #22d3ee;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin: 30px 10px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>📘 Sam's Study Notes</h1>
+  <p>Simple, affordable notes for Classes 6–10</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Class 6 Science</h2>
+    <p>Easy explanations & basics</p>
+    <div class="price">₹5 only</div>
+    <button onclick="buy('Class 6 Science')">Buy on WhatsApp</button>
+  </div>
+
+  <div class="card">
+    <h2>Class 7 Maths</h2>
+    <p>Step-by-step solved examples</p>
+    <div class="price">₹5 only</div>
+    <button onclick="buy('Class 7 Maths')">Buy on WhatsApp</button>
+  </div>
+
+  <div class="card">
+    <h2>Class 8 Science</h2>
+    <p>Short & exam-ready notes</p>
+    <div class="price">₹5 only</div>
+    <button onclick="buy('Class 8 Science')">Buy on WhatsApp</button>
+  </div>
+
+  <div class="card">
+    <h2>Class 9 Science</h2>
+    <p>NCERT focused notes</p>
+    <div class="price">₹5 only</div>
+    <button onclick="buy('Class 9 Science')">Buy on WhatsApp</button>
+  </div>
+
+  <div class="card">
+    <h2>Class 10 Maths</h2>
+    <p>Important formulas & tricks</p>
+    <div class="price">₹5 only</div>
+    <button onclick="buy('Class 10 Maths')">Buy on WhatsApp</button>
+  </div>
+
+</div>
+
+<footer>
+  <p>Student-made notes | Affordable learning for everyone</p>
+</footer>
+
+<script>
+  function buy(item) {
+    const phone = "91XXXXXXXXXX"; 
+    const message = ⁠ Hi, I want to buy ${item} notes for ₹5. ⁠;
+    window.open(⁠ https://wa.me/${phone}?text=${encodeURIComponent(message)} ⁠, "_blank");
+  }
+</script>
+
+</body>
+</html>
